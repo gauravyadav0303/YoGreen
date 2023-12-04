@@ -19,9 +19,8 @@ function SignUpPage() {
     }
   }
 
-
   return (
-    <div className="box min-h-[120vh]">
+    <div className="box h-full  md:h-[130vh]">
       <div className="carousel">
         <img src={logo} className="img-1 mx-auto my-auto" alt="Logo" />
       </div>
@@ -125,12 +124,11 @@ function SignUpPage() {
                 autoComplete="off"
                 placeholder="Buiness Type"
                 required
-            
               >
-              <label></label>
-              <option value="00" >Buiness Type</option>
-<option value="01">Lorem</option>
-<option value="02">Espum</option>
+                <label></label>
+                <option value="00">Buiness Type</option>
+                <option value="01">Lorem</option>
+                <option value="02">Espum</option>
               </select>
             </div>
             <div className="input-wrap">
@@ -191,7 +189,16 @@ function SignUpPage() {
 
             <div className="text-center">
               <h6>Already a Member ?</h6>
-              <Link to="/" href="#" className="toggle">Sign In</Link>
+              <Link
+                to="/"
+                href="#"
+                className="toggle"
+                onClick={() => {
+                  window.scrollTo(0, 0);
+                }}
+              >
+                Sign In
+              </Link>
             </div>
           </div>
         </form>
