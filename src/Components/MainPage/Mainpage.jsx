@@ -4,7 +4,7 @@ import Sidebar from "../Sidebar/Sidebar";
 function MainPage() {
     return ( 
 
-        <div className="flex flex-row relative" >
+        <div className="relative" >
         <Sidebar/>
         <Maindish/>
         </div>

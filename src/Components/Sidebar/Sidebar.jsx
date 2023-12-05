@@ -22,7 +22,7 @@ function Sidebar() {
     return ( 
 
 
-<div className="sidebar w-[15%] lg:w-[25%] h-[100vh] bg-[#3D3D3D] flex flex-col gap-[4rem] fixed">
+<div className="sidebar w-[15%] md:w-[10vw] lg:w-[20vw] h-[100vh] bg-[#3D3D3D] flex flex-col gap-[4rem] fixed">
 
     <div className="flex flex-col mx-auto mt-[2rem] gap-[0.5rem]">
         <img className="lg:hidden mx-auto w-[3rem]" src={logo_mobile} alt="Logo_mobile" />
