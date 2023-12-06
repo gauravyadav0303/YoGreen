@@ -1,14 +1,20 @@
-import Maindish from "../MainDish/Maindish";
-import Sidebar from "../Sidebar/Sidebar";
+import React, { useState } from 'react';
+import Maindish from '../MainDish/Maindish';
+import Sidebar from '../Sidebar/Sidebar';
 
 function MainPage() {
-    return ( 
+  const [selectedComponent, setSelectedComponent] = useState('dashboard');
 
-        <div className="relative" >
-        <Sidebar/>
-        <Maindish/>
-        </div>
-     );
+  const handleSelectComponent = (component) => {
+    setSelectedComponent(component);
+  };
+
+  return (
+    <div className="relative">
+      <Sidebar onSelectComponent={handleSelectComponent} />
+      <Maindish selectedComponent={selectedComponent} />
+    </div>
+  );
 }
 
 export default MainPage;

@@ -11,7 +11,10 @@ import logo_mobile from "./logo-mobile.png";
 import company from "./company.png";
 import activity from "./activity.png";
 import calender from "./calender.png";
+import card from "./card.png";
+import card1 from "./card1.png";
+import mastercard_logo from "./mastercard_logo.png";
 
 export{
-    logo,eye,logo2,dashboard,chat,payment,invoice,lead,search,logo_mobile,company,activity,calender
+    logo,eye,logo2,dashboard,chat,payment,invoice,lead,search,logo_mobile,company,activity,calender,card,card1,mastercard_logo,
 };
