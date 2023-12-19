@@ -34,6 +34,7 @@ function Sidebar({ onSelectComponent }) {
             <li onClick={() => handleComponentClick('lead')} className={getListItemClassName('lead')}><a className="flex flex-row lg:gap-x-[2rem] xl:gap-x-[3rem] p-4" href="#"><img src={payment} alt="" /><span className="hidden lg:inline-block">Payment</span></a></li>
             <li onClick={() => handleComponentClick('payment')} className={getListItemClassName('payment')}><a className="flex flex-row lg:gap-x-[2rem] xl:gap-x-[3rem] p-4" href="#"><img src={lead} alt="" /><span className="hidden lg:inline-block">Leads</span></a></li>
             <li onClick={() => handleComponentClick('propertylisting')} className={getListItemClassName('propertylisting')}><a className="flex flex-row lg:gap-x-[2rem] xl:gap-x-[3rem] p-4" href="#"><img src={search} alt="" /><span className="hidden lg:inline-block">Property Listing</span></a></li>
+            <li onClick={() => handleComponentClick('template')} className={getListItemClassName('template')}><a className="flex flex-row lg:gap-x-[2rem] xl:gap-x-[3rem] p-4" href="#"><img src={search} alt="" /><span className="hidden lg:inline-block">Template</span></a></li>
         </ul>
     </div>
 </div>

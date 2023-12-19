@@ -7,6 +7,7 @@ import Lead from "../Lead/Lead";
 import LeadTwo from "../Lead/LeadTwo";
 import Payment from "../Payment/Payment";
 import PropertyListing from "../PropertyListing/PropertyListing";
+import Template from '../Template/Template';
 
 function Maindish({selectedComponent}) {
   
@@ -26,6 +27,8 @@ function Maindish({selectedComponent}) {
           return <Payment />;
         case 'propertylisting':
           return <PropertyListing />;
+        case 'template':
+          return  <Template/>;
         default:
           return null;
       }
